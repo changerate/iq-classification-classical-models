@@ -17,5 +17,5 @@ mkdir -p "$output_dir"
 # Find all .sigmf-meta files recursively and convert
 find "$input_dir" -type f -name "*.sigmf-meta" | while read -r f; do
     out_file="$output_dir/$(basename "${f%.*}").csv"
-    python conv_sigmf_to_iq_csv.py --meta "$f" --out "$out_file"
+    python3 conv_sigmf_to_iq_csv.py --meta "$f" --out "$out_file"
 done
