@@ -1,0 +1,35 @@
+Model: Support Vector Classifier
+Accuracy: 90.51%
+
+The important vars:
+window_size: 16384
+step: 512
+every n rows: 100
+chunk size: 10000
+training time: 720mins
+
+Classification Report:
+               precision    recall  f1-score   support
+
+    DeerC_DE2       0.99      1.00      0.99      1812
+  Mavic_Air_2       0.00      0.00      0.00       604
+ Mavic_Air_2S       1.00      1.00      1.00       604
+      Mini_SE       1.00      0.73      0.84      1208
+         None       0.98      1.00      0.99      2416
+ Ruko_F11_Pro       0.80      1.00      0.89      3020
+UNKNOWN_LABEL       0.75      0.96      0.84       476
+
+     accuracy                           0.91     10140
+    macro avg       0.79      0.81      0.79     10140
+ weighted avg       0.86      0.91      0.88     10140
+
+
+Confusion Matrix:
+[[1804    0    0    1    0    7    0]
+ [   0    0    0    0    1  456  147]
+ [   0    0  602    0    0    2    0]
+ [  17    0    0  883   25  279    4]
+ [   0    0    0    0 2416    0    0]
+ [   0    0    0    2    0 3018    0]
+ [   0    0    0    0   21    0  455]]
+            Predicted Values
