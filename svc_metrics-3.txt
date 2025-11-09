@@ -1,0 +1,32 @@
+Model: Random Forest
+Accuracy: 99.19%
+
+
+Number of samples: 620
+Count	Label
+301	unknown
+107	Ocusync_2.0_mavic_air_2_DL
+84	Ocusync_2.0_mavic_air_2_UL
+52	DeerC_DE22_Uplink
+76	HS100_Downlink
+
+Classification Report:
+                            precision    recall  f1-score   support
+
+         DeerC_DE22_Uplink       1.00      1.00      1.00        10
+            HS100_Downlink       1.00      1.00      1.00        15
+Ocusync_2.0_mavic_air_2_DL       1.00      1.00      1.00        22
+Ocusync_2.0_mavic_air_2_UL       0.94      1.00      0.97        17
+                   unknown       1.00      0.98      0.99        60
+
+                  accuracy                           0.99       124
+                 macro avg       0.99      1.00      0.99       124
+              weighted avg       0.99      0.99      0.99       124
+
+
+Confusion Matrix:
+[[10  0  0  0  0]
+ [ 0 15  0  0  0]
+ [ 0  0 22  0  0]
+ [ 0  0  0 17  0]
+ [ 0  0  0  1 59]]
